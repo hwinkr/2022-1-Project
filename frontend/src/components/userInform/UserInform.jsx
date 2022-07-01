@@ -44,7 +44,7 @@ function UserInfrom() {
     const getPost = allPosts.filter(function(element){
       return element.title === resName
     })
-    return getPost[0]._id
+    return getPost._id
   }
 
   return (

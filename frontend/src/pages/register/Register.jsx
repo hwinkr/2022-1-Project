@@ -130,7 +130,6 @@ function Register() {
               className="registerButton">회원가입</button>
             </form>
         </div>
-        <Sidebar />    
     </div>
   )
 }

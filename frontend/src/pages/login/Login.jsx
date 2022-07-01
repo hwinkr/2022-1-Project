@@ -67,7 +67,6 @@ function Login() {
                 </button>
             </div> 
         </div>
-        <Sidebar />    
     </div>
     </>
   )
