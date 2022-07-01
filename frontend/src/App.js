@@ -26,19 +26,18 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Topbar />  
-        {/* <Header /> */}
-        <Routes>  
-          <Route exact path= "/" element={
-            user ? <Home /> : <Login />
-          }/>
-          <Route path= "/register" element={<Register />}/> 
-          <Route path= "/login" element={<Login />}/>
-          <Route path= "/write" element={
-            user ? <Write /> : <Login />}/>
-          <Route path= "/myPage" element={<Mypage />}/>
-           {/* 주소에 파라미터를 줌으로써 주소를 추출 할 수 있다. */} 
-          <Route path= "/post/:postId" element={<Single />}/>
-        </Routes>
+          <Routes>  
+            <Route exact path= "/" element={
+              user ? <Home /> : <Login />
+            }/>
+            <Route path= "/register" element={<Register />}/> 
+            <Route path= "/login" element={<Login />}/>
+            <Route path= "/write" element={
+              user ? <Write /> : <Login />}/>
+            <Route path= "/myPage" element={<Mypage />}/>
+            {/* 주소에 파라미터를 줌으로써 주소를 추출 할 수 있다. */} 
+            <Route path= "/post/:postId" element={<Single />}/>
+          </Routes>
       </BrowserRouter>
      {/* 유저가 페이지 이동을 하면 element를 바꾸고 거기서 flex를 재설정 하자. */}
     </div>
